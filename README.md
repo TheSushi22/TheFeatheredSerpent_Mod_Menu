@@ -25,5 +25,5 @@ The Following Are Needed To Run
     
 ## Latest Versions
 
- - [Versions]([https://tsundown.itch.io/the-feathered-serpent](https://github.com/TheSushi22/TheFeatheredSerpent_Mod_Menu/branches)https://github.com/TheSushi22/TheFeatheredSerpent_Mod_Menu/branches)
+ - [Versions](https://github.com/TheSushi22/TheFeatheredSerpent_Mod_Menu/branches)
 
