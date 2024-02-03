@@ -23,7 +23,7 @@ The Following Are Needed To Run
   pip install customtkinter
 ```
     
-## Latest Versions
+## Versions
 
  - [Versions](https://github.com/TheSushi22/TheFeatheredSerpent_Mod_Menu/branches)
 
