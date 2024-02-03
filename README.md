@@ -23,7 +23,7 @@ The Following Are Needed To Run
   pip install customtkinter
 ```
     
-## Find Your Version
+## Works With Version:
 
- - [Versions]()
+ - [TheFeatheredSerpent_KS_V1.7]()
 
