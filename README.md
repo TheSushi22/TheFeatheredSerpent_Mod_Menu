@@ -5,6 +5,8 @@ A simple mod menu for Indie Game The Fethered Serpent
 
 ## Installation
 Use Python To Run
+My Preferred Of Running Python Scripts Is [Visual Studio Code](https://code.visualstudio.com/) By Microsoft
+Quick Setup Guide To Get Started In Python [Here](https://www.youtube.com/watch?v=cUAK4x_7thA)
 
 The Following Are Needed To Run
 
@@ -14,7 +16,7 @@ The Following Are Needed To Run
 ```bash
   pip install customtkinter
 ```
-## I Ran Into An Issue
+## "I Ran Into An Issue"
 Heres Some Simple Steps To Follow To Fix The Problem:
 
 1. Make Sure The Menu Is Being Used With The Right Version Of The Game
