@@ -4,9 +4,9 @@
 A simple mod menu for Indie Game The Fethered Serpent
 
 ## Installation
-Use Python To Run
-My Preferred Of Running Python Scripts Is [Visual Studio Code](https://code.visualstudio.com/) By Microsoft
-Quick Setup Guide To Get Started In Python [Here](https://www.youtube.com/watch?v=cUAK4x_7thA)
+- Use Python To Run
+- My Preferred Of Running Python Scripts Is [Visual Studio Code](https://code.visualstudio.com/) By Microsoft
+- Quick Setup Guide To Get Started In Python [Here](https://www.youtube.com/watch?v=cUAK4x_7thA)
 
 The Following Are Needed To Run
 
