@@ -1,7 +1,7 @@
 
 # The Feathered Serpent Mod Menu
 
-A simple mod menu for Indie Game The Fethered Serpent
+A Simple Mod Menu For Indie Game The Fethered Serpent
 
 ## Installation
 - Use Python To Run
