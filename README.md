@@ -21,5 +21,5 @@ Run File Named "Mod Menu.py"
 
 ## Works With Version:
 
- - TheFeatheredSerpent_KS_V1.7
+ - TheFeatheredSerpent_V4.5
 
