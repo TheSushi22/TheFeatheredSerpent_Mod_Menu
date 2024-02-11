@@ -1,34 +1,29 @@
 import pymem
-from pymem import Pymem
+from pymem import *
 from pymem.ptypes import RemotePointer
 
-#Game Name
-pm = Pymem("TheFeatheredSerpent_KS_V1.7.exe")
+#Searches For Game By Name
+pm = Pymem("TheFeatheredSerpent_V4.5.exe")
 
 #Game Offset
-
 game_offset = pm.base_address + 0x023D2BC0
 
 #Offsets
-blood_gems_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xA28]
+blood_gems_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xB90]
 
-coins_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xA58]
+coins_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xBF0]
 
 health_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0x230]
 
-arrow_speed_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xBD8]
+damage_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xC68]
 
-damage_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xAD0]
+ammo_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xC20]
 
-ammo_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xA88]
+machine_gun_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xD40]
 
-machine_gun_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xBA8]
+player_speed_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xD10] #Working
 
-player_speed_offsets = offsets=[0x1E0, 0x58, 0x20, 0x70, 0x58, 0x20, 0xB78]
-
-
-
-#Where The Magic Happens
+#Uses Game Offset And Offsets To Direct Script Where To Read And Write From
 def getPointerAddress(base, offsets):
     remote_pointer = RemotePointer(pm.process_handle, base)
     for offset in offsets:
@@ -37,15 +32,12 @@ def getPointerAddress(base, offsets):
         else:
             return remote_pointer.value + offset
 
-
-#Putting It Together
+#Tells getPointerAddress What Offset To Mix With Game Offset And Saves It To Appropriate Name
 blood_gems = getPointerAddress(game_offset, blood_gems_offsets)
 
 coins = getPointerAddress(game_offset, coins_offsets)
 
 health = getPointerAddress(game_offset, health_offsets)
-
-arrow_speed = getPointerAddress(game_offset, arrow_speed_offsets)
 
 damage = getPointerAddress(game_offset, damage_offsets)
 
